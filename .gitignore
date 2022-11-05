@@ -1,0 +1,6 @@
+# Ignore dotnet core build
+**/bin/
+**/obj/
+
+# Ignore Visual Studio Code
+.vscode
