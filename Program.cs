@@ -54,12 +54,18 @@ public class Program
             end = int.Parse(args[2]);
         }
 
+        var count = 0;
+        var sum = 0;
         foreach (var prime in PrimeNumbers.GetAll(start, end))
         {
+            count += 1;
+            sum += prime;
             Console.WriteLine(prime);
         }
 
-        return 0;
+        Console.WriteLine();
+        Console.WriteLine($"The total of the first {count} prime numbers is {sum}");
+    }
 
     private static void PrintPerfectNumbers(string[] args)
     {
